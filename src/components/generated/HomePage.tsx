@@ -7,7 +7,6 @@ import VideoInputSection from "./VideoInputSection";
 import TabbedContent, { VideoData } from "./TabbedContent";
 export interface HomePageProps {
   className?: string;
-  mpid?: string;
 }
 
 // Demo data for showcase purposes
@@ -53,18 +52,18 @@ export default function HomePage({
       setIsLoading(false);
     }, 2000);
   };
-  return <main className={cn("flex-1 flex flex-col", className)} data-magicpath-id="0" data-magicpath-path="HomePage.tsx">
+  return <main className={cn("flex-1 flex flex-col", className)}>
       {/* Hero/Input Section */}
-      <section className="flex-shrink-0" data-magicpath-id="1" data-magicpath-path="HomePage.tsx">
-        <VideoInputSection onSubmit={handleVideoSubmit} isLoading={isLoading} data-magicpath-id="2" data-magicpath-path="HomePage.tsx" />
+      <section className="flex-shrink-0">
+        <VideoInputSection onSubmit={handleVideoSubmit} isLoading={isLoading} />
       </section>
 
       {/* Tabbed Content Section */}
-      <section className="flex-1" data-magicpath-id="3" data-magicpath-path="HomePage.tsx">
-        <TabbedContent data={videoData} isLoading={isLoading} data-magicpath-id="4" data-magicpath-path="HomePage.tsx" />
+      <section className="flex-1">
+        <TabbedContent data={videoData} isLoading={isLoading} />
       </section>
 
       {/* Spacer for better layout when no content */}
-      {!hasSubmitted && <div className="flex-1 min-h-[20vh]" data-magicpath-id="5" data-magicpath-path="HomePage.tsx" />}
+      {!hasSubmitted && <div className="flex-1 min-h-[20vh]" />}
     </main>;
 }

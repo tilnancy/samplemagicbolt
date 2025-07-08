@@ -9,7 +9,6 @@ import TabbedContent, { VideoData } from "./TabbedContent";
 import FooterSection from "./FooterSection";
 export interface InfinityHomePageProps {
   className?: string;
-  mpid?: string;
 }
 
 // Demo data for showcase purposes
@@ -61,29 +60,29 @@ export default function InfinityHomePage({
   const handleAvatarClick = () => {
     console.log("Avatar clicked");
   };
-  return <div className={cn("min-h-screen flex flex-col bg-background", className)} data-magicpath-id="0" data-magicpath-path="InfinityHomePage.tsx">
+  return <div className={cn("min-h-screen flex flex-col bg-background", className)}>
       {/* Header Navigation - Sticky */}
-      <div className="sticky top-0 z-50" data-magicpath-id="1" data-magicpath-path="InfinityHomePage.tsx">
-        <HeaderNavigation onSettingsClick={handleSettingsClick} onAvatarClick={handleAvatarClick} data-magicpath-id="2" data-magicpath-path="InfinityHomePage.tsx" />
+      <div className="sticky top-0 z-50">
+        <HeaderNavigation onSettingsClick={handleSettingsClick} onAvatarClick={handleAvatarClick} />
       </div>
 
       {/* Main Content */}
-      <main className="flex-1 flex flex-col" data-magicpath-id="3" data-magicpath-path="InfinityHomePage.tsx">
+      <main className="flex-1 flex flex-col">
         {/* Hero/Input Section */}
-        <section className="flex-shrink-0" data-magicpath-id="4" data-magicpath-path="InfinityHomePage.tsx">
-          <VideoInputSection onSubmit={handleVideoSubmit} isLoading={isLoading} data-magicpath-id="5" data-magicpath-path="InfinityHomePage.tsx" />
+        <section className="flex-shrink-0">
+          <VideoInputSection onSubmit={handleVideoSubmit} isLoading={isLoading} />
         </section>
 
         {/* Tabbed Content Section */}
-        <section className="flex-1" data-magicpath-id="6" data-magicpath-path="InfinityHomePage.tsx">
-          <TabbedContent data={videoData} isLoading={isLoading} data-magicpath-id="7" data-magicpath-path="InfinityHomePage.tsx" />
+        <section className="flex-1">
+          <TabbedContent data={videoData} isLoading={isLoading} />
         </section>
 
         {/* Spacer for better layout when no content */}
-        {!hasSubmitted && <div className="flex-1 min-h-[20vh]" data-magicpath-id="8" data-magicpath-path="InfinityHomePage.tsx" />}
+        {!hasSubmitted && <div className="flex-1 min-h-[20vh]" />}
       </main>
 
       {/* Footer */}
-      <FooterSection data-magicpath-id="9" data-magicpath-path="InfinityHomePage.tsx" />
+      <FooterSection />
     </div>;
 }
