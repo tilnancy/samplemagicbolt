@@ -16,19 +16,19 @@ export interface FooterSectionProps {
 const defaultLinks: FooterLink[] = [{
   label: "Privacy Policy",
   href: "/privacy",
-  mpid: "c1d19fca-178f-4c73-8864-8cdef12c41bb"
+  mpid: "765a527d-f43a-466e-80e7-4f7d850a2dbf"
 }, {
   label: "Terms of Service",
   href: "/terms",
-  mpid: "da59943f-fd43-4d49-bb57-b5f51c6569b4"
+  mpid: "1c252ff6-db84-4231-b637-992f483985af"
 }, {
   label: "Contact",
   href: "/contact",
-  mpid: "5e58c948-e58c-4c87-a742-6c92c433bef3"
+  mpid: "4a2eb66d-3383-4e7b-9fe6-534c79712b3c"
 }, {
   label: "Support",
   href: "/support",
-  mpid: "af68e914-23df-4525-b3d2-465ac0ba6b73"
+  mpid: "ed711190-d731-4fe8-bb2c-7693d382341c"
 }];
 export default function FooterSection({
   copyrightText = "© 2024 Infinity",
