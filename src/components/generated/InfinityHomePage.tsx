@@ -75,9 +75,9 @@ export default function InfinityHomePage({
         </section>
 
         {/* Tabbed Content Section */}
-        {hasSubmitted && <section className="flex-1" data-magicpath-id="6" data-magicpath-path="InfinityHomePage.tsx">
-            <TabbedContent data={videoData} isLoading={isLoading} data-magicpath-id="7" data-magicpath-path="InfinityHomePage.tsx" />
-          </section>}
+        <section className="flex-1" data-magicpath-id="6" data-magicpath-path="InfinityHomePage.tsx">
+          <TabbedContent data={videoData} isLoading={isLoading} data-magicpath-id="7" data-magicpath-path="InfinityHomePage.tsx" />
+        </section>
 
         {/* Spacer for better layout when no content */}
         {!hasSubmitted && <div className="flex-1 min-h-[20vh]" data-magicpath-id="8" data-magicpath-path="InfinityHomePage.tsx" />}
